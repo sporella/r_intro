@@ -1,0 +1,93 @@
+---
+title: "Todo lo que tienes que saber para empezar a analizar datos con R"
+author: "Stephanie Orellana"
+subtitle: "2024-02-10"
+format: revealjs
+---
+
+## A quién va dirigido
+
+- No sabes nada de R
+
+- Te lo enseñaron en la Universidad pero poco entendiste
+
+- Sabes hacer análisis de datos pero en otros lenguajes Python/Stata/Matlab, etc
+
+## Qué aprenderemos hoy
+
+- Paseo para familiarizarnos con R y Rstudio
+
+- Instalación de paquetes
+
+- Diferentes tipos de archivos `.R/.Rmd/.qmd`
+
+- Proyectos
+
+- Cómo cargar datos
+
+- Tidyverse
+
+- Funciones básicas
+
+- Gráficos simples
+
+- Exportar
+
+# Algunas ideas
+
+- Tener datos
+
+- Tener preguntas
+
+- Mantener el orden
+
+- Buscar en Google
+
+- Partir por cosas simples
+
+- Creatividad
+
+
+# Guía de funciones
+
+- Funciones para cargar los datos:
+  - `readr::read_csv()`, `readxl::read_excel()`
+
+- Para limpiar los nombres de forma rápida:
+  - `janitor::clean_names()`
+  
+- Para renombrar columnas:
+  - `rename()`
+  
+- Para modificar o crear una columna:
+  - `mutate()`
+  
+# Guía de funciones
+
+- Para seleccionar columnas:
+  - `select()`
+  
+- Para filtrar según condiciones:
+  - `filter()`
+
+# Guía de funciones
+  
+- Para generar resúmenes de información:
+  - `group_by() + summarise()`
+
+- Para generar nuevas columnas basadas en grupos:
+  - `group_by() + mutate()`
+  
+# Guía de funciones
+
+- Para ver valores únicos:
+  - `unique() / distinct()`
+
+- Para contar valores únicos:
+  - `n_distinct()`
+  
+- Para revisar tipo de los datos:
+  - `str() / glimpse()`
+  
+- Para ordenar según los valores de una o más columnas:
+  - `arrange()` 
